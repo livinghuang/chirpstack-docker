@@ -1,6 +1,6 @@
 # Auto-generated from concentratord channels file
 [[regions]]
-  id="in865"
+  id="in865_rp002_104"
   description="IN865"
   common_name="IN865"
 
@@ -9,7 +9,7 @@
     [regions.gateway.backend]
       enabled="mqtt"
       [regions.gateway.backend.mqtt]
-        topic_prefix="in865"
+        topic_prefix="in865_rp002_104"
         server="tcp://$MQTT_BROKER_HOST:1883"
         username=""
         password=""
@@ -39,6 +39,12 @@
       bandwidth=125000
       modulation="LORA"
       spreading_factors=[7, 8, 9, 10, 11, 12]
+
+    [[regions.gateway.channels]]
+      frequency=866550000
+      bandwidth=125000
+      modulation="LORA"
+      spreading_factors=[7]
 
   # Region specific network configuration.
   [regions.network]
